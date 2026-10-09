@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHEAT Smart Campus | CODE COMMANDER</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif;}
+body{background:#f0f4ff}
+.header{background:linear-gradient(90deg,#0A3D8F,#123e86);color:white;padding:20px;text-align:center}
+.header h1{font-size:22px}
+.header p{opacity:.9;font-size:14px;margin-top:5px}
+.container{padding:15px;max-width:500px;margin:auto}
+.card{background:white;border-radius:15px;padding:18px;margin-bottom:15px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.card h3{color:#0A3D8F;margin-bottom:10px;border-left:4px solid #0A3D8F;padding-left:8px}
+.btn{background:#0A3D8F;color:white;border:none;padding:12px;border-radius:10px;width:100%;font-size:16px;font-weight:bold}
+input{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin:8px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:#eaf1ff;border-radius:10px;padding:12px;text-align:center}
+.stat b{color:#0A3D8F;font-size:20px;display:block}
+.qr{text-align:center}
+.qr img{border:8px solid #f0f4ff;border-radius:15px}
+.footer{text-align:center;padding:15px;color:#666;font-size:12px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>SHEAT College - Smart Campus</h1>
+<p>Team: CODE COMMANDER | Varanasi</p>
+</div>
+<div class="container">
+<div class="card">
+<h3>Student Login</h3>
+<input type="text" id="roll" placeholder="Roll No: DA6221345-WQ">
+<input type="password" placeholder="Password">
+<button class="btn" onclick="alert('Welcome! Login Successful')">Login with QR</button>
+</div>
+<div class="card">
+<h3>Dashboard</h3>
+<div class="grid">
+<div class="stat"><b>85%</b>Attendance</div>
+<div class="stat"><b>Paid</b>Fees Status</div>
+<div class="stat"><b>2 Books</b>Library</div>
+<div class="stat"><b>Active</b>ID Card</div>
+</div>
+</div>
+<div class="card qr">
+<h3>QR ID Card - DA6221345-WQ</h3>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=SHEAT-SMART-CAMPUS-DA6221345" alt="QR">
+<p style="margin-top:10px"><b>Name:</b> Student
